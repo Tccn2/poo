@@ -1,0 +1,37 @@
+class Aluno {
+    constructor (nome, idade, matricula){
+        this.nome = nome
+        this.idade = idade
+        this.matricula = matricula
+    }
+}
+//o construtor não receberá nenhum atributo
+//A classe terá um único atributo: listaDeAlunos
+//O construtor deverá inicializar o atributo com um array vazio.
+//Adicione o metódo adicionarAluno. Ele terá como entrada
+//um alunio. O aluno da entrada será adicionado ao atributo
+//listaDeAlunos
+class Turma{
+    constructor(){
+    this.listaDeAlunos = [];
+        
+    }
+
+    adicionarAluno(aluno){
+        //nome da função
+        this.listaDeAlunos.push(aluno)
+
+    }
+
+
+    removerAluno(matricula){
+        //for para percorrer o array
+        for(let i = 0; i < this.listaDeAlunos.length; i++)
+        if(this.listaDeAlunos[i].matricula == matricula){
+            //if para encontrar a matricula pretendida
+            this.listaDeAlunos.splice(i, 1)
+            //splice para deletar o elemento do array
+        }
+    }
+
+}

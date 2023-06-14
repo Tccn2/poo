@@ -1,57 +1,25 @@
-let celular1 = new Celular(
-    'Samsung',
-    'A23',
-    '4GB',
-    '128GB',
-    'Octa-Core',
-    4,
-    "SamsungA23.avif"
-);
-let celular2 = new Celular(
-    'Xiaomi',
-    '12T Pro',
-    '8GB',
-    '256GB',
-    'Snapdragon 8+ Gen 1',
-    4,
-    "Xiaomi12Pro.jpg"
-);
-let celular3 = new Celular(
-    'Motorola',
-    'E22',
-    '4GB',
-    '128GB',
-    'Helio G37',
-    3,
-    "MotoE22.jpg"
-);
-let celular4 = new Celular(
-    'Apple',
-    '11',
-    '4G',
-    '256GB',
-    'Apple A13 Bionic hexa-core',
-    4,
-    "Apple11.jpeg"
-);
-let celular5 = new Celular(
-    'LG',
-    'K61',
-    '4GB',
-    '128GB',
-    'Octa-Core 2.3',
-    4,
-    "LGK61.jpg"
-);
-let listaDeCelular = [celular1,celular2,celular3,celular4,celular5]
-for(let i = 0; i<listaDeCelular.length; i++){
-    document.write(`
-        <h1><div> ${listaDeCelular[i].marca}</h1> </div>
-        <div> ${listaDeCelular[i].modelo}</div>
-        <div> ${listaDeCelular[i].armazenamento}</div>
-        <div> ${listaDeCelular[i].ram}</div>
-        <div> ${listaDeCelular[i].qtdDeCameras}</div>
-        <div> ${listaDeCelular[i].processador}</div>
-        <img src="img/${listaDeCelular[i].foto}" /> 
-`)
-}
+let aluno1 = new Aluno('Alexsander', '18', '1')
+let aluno2 = new Aluno('Thayslane a boa', '71', '2')
+let aluno3 = new Aluno('Jaci do Gera', '25','3')
+let aluno4 = new Aluno('Rebekinha da quebrada', '22', '4')
+let aluno5 = new Aluno('Davi o motorola boy', '22','5')
+
+let segundoAno = new Turma();
+//adicionem  os 5 objetos da classe Aluno ao SegundoAno
+let terceiroAno = new Turma();
+
+segundoAno.adicionarAluno(aluno1)
+segundoAno.adicionarAluno(aluno2)
+segundoAno.adicionarAluno(aluno3)
+
+
+terceiroAno.adicionarAluno(aluno4)
+terceiroAno.adicionarAluno(aluno5)
+// aluno é o objeto
+// alekxander é o atributo
+
+//imprimir o console
+console.log(segundoAno);
+console.log(terceiroAno);
+
+//como remover o aluno2 do segundo ano
