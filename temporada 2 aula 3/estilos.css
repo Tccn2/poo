@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(148, 147, 233);
+
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:hover {
+    color:pink;
+    box-shadow: 4px 8px 16px;
+}
