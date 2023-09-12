@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>rebekinha</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+
+    <form id="cadastroAluno" action="#">
+        <div><label for="">Turma: </label><input id="iptTurma" type="text"></div>
+        <div><label for="">Primeiro Nome: </label><input id="iptPrimeiroNome" type="text"></div>
+        <div><label for="">Ultimo Nome: </label><input id="iptUltimoNome" type="text"></div>
+        <div><label for="">Data de Nascimento: </label><input id="iptDatadeNascimento" type="date"></div>
+        <div><label for="">Matrícula: </label><input id="iptMatricula" type="text"></div>
+
+        <button id="btnCadastrar">Cadastrar</button>
+    </form>
+
+    <div id="containerDeCards"></div>
+
+
+
+
+
+
     <script src="classes.js"></script>
     <script src="objetos.js"></script>
+    <script src="controlador.js"></script>
+    <script src="designer.js"></script>
+
 </body>
+
 </html>

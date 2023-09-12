@@ -1,18 +1,92 @@
 body {
-    background-color: rgb(148, 147, 233);
+    background-color: #000000;
+
+    align-items: center;
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.card{
+    width: 720px;
+    margin-left: 60px;
+    margin-bottom: 20px; /*margem inferior */
+    display: flex;
+    flex-direction: column;
+}
+
+/* */
+.card:hover{
+    transform: scale(1.05);
+    transition: 800ms ease-in;
+
+}
+.card:not(.card:hover){
+    opacity: 0.5;
 
 }
 
-img {
-    width: 200px;
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: -6px;
+    background-color: #303030;
+    box-shadow: 4px 16px 10px #10101066;
+    z-index: 1000;
+}
+
+.cabecalho .turma {
+    color: #75d063; 
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+.cabecalho .nome {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cabecalho .logo {
+    height: 140px;
+}
+
+.conteudo {
+    display: flex;
+    background-color: #eaeaea;
+    justify-content: space-around;
+    z-index: 1;
+    padding: 24px; /* espaço  */
+}
+
+.conteudo .foto {
+    border: solid 2px rgb(78, 180, 180);
+    width: 140px;
     height: 200px;
+    object-fit: cover;
+    padding: 4px;
 }
-
-.card {
-    font-family: Arial, Helvetica, sans-serif;
+.conteudo .info{
+    width: 400px;
+    
+    
 }
+.info .label{
+    color: rgb(84, 192, 192);
+    font-size: 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    
+}
+.info .valor{
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 650;
+    color: #000000f1;
 
-.card:hover {
-    color:pink;
-    box-shadow: 4px 8px 16px;
+    border-bottom:1px solid rgb(84, 192, 192) ;
+
 }
